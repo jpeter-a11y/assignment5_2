@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Interactive Quiz</title>
+</head>
+<body>
+
+<h2>Interactive Quiz</h2>
+
+<p>Which is faster ? 2.0 TDI or 2.0 TSI? </p>
+
+<input type="text" id="ans">
+<button onclick="check()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function check() {
+    var userAnswer = document.getElementById("ans").value;
+
+    if (userAnswer == "2.0 TSI")
+        document.getElementById("result").innerHTML = "Correct!";
+    else
+        document.getElementById("result").innerHTML = "Incorrect. The correct answer is 2.0 TSI.";
+}
+</script>
+
+</body>
+</html>
